@@ -1,4 +1,4 @@
-package com.liusir.thread.basic;
+package com.liusir.thread.basic.mul;
 
 /**
  * Created by Administrator on 2019-1-4.

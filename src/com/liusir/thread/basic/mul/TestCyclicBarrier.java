@@ -1,4 +1,4 @@
-package com.liusir.thread.basic;
+package com.liusir.thread.basic.mul;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;

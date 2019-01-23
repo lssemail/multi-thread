@@ -1,4 +1,4 @@
-package com.liusir.thread.basic;
+package com.liusir.thread.basic.mul;
 
 import java.io.File;
 import java.io.FileInputStream;

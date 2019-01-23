@@ -1,4 +1,4 @@
-package com.liusir.thread.basic;
+package com.liusir.thread.basic.mul;
 
 import java.util.LinkedList;
 import java.util.Queue;

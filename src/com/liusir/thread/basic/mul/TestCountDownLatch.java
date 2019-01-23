@@ -1,4 +1,4 @@
-package com.liusir.thread.basic;
+package com.liusir.thread.basic.mul;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
@@ -15,7 +15,7 @@ public class TestCountDownLatch {
 
         VideoConference conference = new VideoConference(NUM);
         new Thread(conference).start();
-        for (int i = 0; i< NUM - 1; i++){
+        for (int i = 0; i< NUM; i++){
             Participant participant = new Participant(conference, "Participant " + i);
             new Thread(participant).start();
         }
@@ -34,7 +34,6 @@ class VideoConference implements Runnable{
     }
 
     public void arrive(String name){
-
         System.out.printf("%s has arrived.\n", name);
         latch.countDown();
         System.out.printf("waiting count for %s arrived.\n", String.valueOf(latch.getCount()));
@@ -81,6 +80,7 @@ class Participant implements Runnable{
             e.printStackTrace();
         }
         conference.arrive(name);
+        System.out.println(this.name + " do some work");
 
     }
 }
